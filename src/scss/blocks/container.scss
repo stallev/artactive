@@ -2,10 +2,13 @@
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
+  &--header{
+    padding: 0 15px;
+  }
 }
 @media (min-width: $tablet-width) {
   .container{
-    width: 768px;
+    width: $tablet-width;
     &--header{
       background-size: 174%;
       background-position: -468px 0px;
@@ -13,4 +16,7 @@
   }
 }
 @media (min-width: $desctop-width) {
+  .container{
+    width: $desctop-width;
+  }
 }
