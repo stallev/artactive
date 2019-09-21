@@ -2,26 +2,69 @@
   display: none;
 }
 .nav__list{
-  width: 60%;
-  box-sizing: border-box;
-  display: flex;
-  margin: 25px auto;
-
-}
-.nav__item{
-  list-style-type: none;
-  flex-grow: 1;
-
+  @extend %fl-col;
 }
 .nav__link{
-  font-family: 'Playfair Display', Arial, sans-serif;
-  color: white;
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 18px;
-  text-transform: capitalize;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 0;
+  border-top: 1px grey solid;
+  border-bottom: 1px grey solid;
+  background-color: inherit;
+  text-align: center;
+  color: #ffffff;
+  font-family: $form-title-ff;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.65px;
+  &:hover{
+    background-color: #8000ff;
+  }
 }
 @media (min-width: $tablet-width) {
 }
 @media (min-width: $desctop-width) {
+  .nav{
+    display: block;
+    flex-grow: 2;
+  }
+  .nav__list{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .nav__item{
+    color: #ffffff;
+    font-family: $form-title-ff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.65px;
+  }
+  .nav__link{
+    color: #ffffff;
+    font-family: $form-title-ff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    // Text style for "О нас"
+    letter-spacing: 0.65px;
+    border: 0;
+  }
+  .nav__link--phone-number{
+    font-size: 16px;
+  }
+  .nav__link--call-order{
+    padding: 8px 12px;
+    border-radius: 17px;
+    border: 2px solid #ffffff;
+    font-family: "Open Sans - Extra Bold";
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.55px;
+  }
+
 }
