@@ -1,0 +1,9 @@
+.simple-slider{
+  &__slides-wrapper{
+    @extend %fl-col;
+  }
+  &__buttons-wrapper{}
+  &__button{
+    display: block;
+  }
+}
