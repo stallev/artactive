@@ -1,0 +1,75 @@
+.section-images{
+  position: relative;
+  padding: 19px 0 120px 17px;
+  &__captions{
+    position: relative;
+  }
+  &__caption{
+    position: absolute;
+    width: 129px;
+    text-align: center;
+    color: #5e606a;
+    font-family: $content-ff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  &__caption--reception{
+    top: 129px;
+    left: 86px;
+  }
+  &__caption--design{
+    top: 330px;
+    left: 170px;
+  }
+  &__caption--printing{
+    top: 420px;
+    left: 5px;
+  }
+  &__caption--moving{
+    top: 656px;
+    left: 89px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .section-images{
+    &__caption--reception{
+      top: 130px;
+      left: 178px;
+    }
+    &__caption--design{
+      top: 232px;
+      left: 570px;
+    }
+    &__caption--printing{
+      top: 318px;
+      left: 5px;
+    }
+    &__caption--moving{
+      top: 436px;
+      left: 379px;
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .section-images{
+    width: 165%;
+    margin-right: 70px;
+    &__caption--reception{
+      top: 130px;
+      left: 178px;
+    }
+    &__caption--design{
+      top: 271px;
+      left: 389px;
+    }
+    &__caption--printing{
+      top: 318px;
+      left: 5px;
+    }
+    &__caption--moving{
+      top: 455px;
+      left: 213px;
+    }
+  }
+}

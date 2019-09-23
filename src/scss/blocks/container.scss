@@ -2,8 +2,12 @@
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 0 15px;
   &--header{
-    padding: 0 15px;
+  }
+  &--about-us{
+    @extend %fl-col;
+    padding-top: 30px;
   }
 }
 @media (min-width: $tablet-width) {
@@ -18,5 +22,8 @@
 @media (min-width: $desctop-width) {
   .container{
     width: $desctop-width;
+    &--about-us{
+      flex-direction: row;
+    }
   }
 }
