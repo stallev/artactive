@@ -1,0 +1,116 @@
+.service-item{
+  &--service{
+    order: 1;
+  }
+  &--wide{
+    margin-bottom: 100px;
+  }
+  &--printing{
+    box-sizing: border-box;
+
+  }
+  &__content{
+    @extend %fl-col;
+  }
+  &__title{
+    margin-bottom: 35px;
+    color: $article-title-color;
+    font-family: $article-title-ff;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  &__paragraph{
+    margin-bottom: 30px;
+    color: #5e606a;
+    font-family: $content-ff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &__content-list{
+    padding-left: 25px;
+  }
+  &__list-item{
+    list-style: circle;
+    color: #5e606a;
+    font-family: $content-ff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &--printing{
+    background-image: url(../img/content/sofa_m.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 93px 314px;
+  }
+}
+.service-item__paragraph:last-child{
+  margin-bottom: 10px;
+}
+@media (min-width: $tablet-width){
+  .service-item{
+    &__title{
+      width: 570px;
+      font-size: 32px;
+    }
+    &--printing{
+      position: relative;
+      margin-bottom: 130px;
+      background-image: url(../img/content/sofa_t.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 267px 0px;
+    }
+  }
+  .service-item__content--printing{
+    width: 550px;
+  }
+  .service-item__paragraph--printing{
+    margin-bottom: 10px;
+  }
+  .service-item__bottom-decor{
+    position: absolute;
+    bottom: -50px;
+    margin: 0 auto;
+    width: 11px;
+    height: 130px;
+  }
+}
+@media (min-width: $desctop-width) {
+  .service-item{
+    order: 2;
+    &__title{
+      margin-bottom: 40px;
+    }
+    &__paragraph{
+      color: #5e606a;
+      font-family: $content-ff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    &--service{
+      width: 475px;
+      margin-bottom: 25px;
+    }
+    &--wide{
+      min-height: 500px;
+    }
+    &--printing{
+      margin-bottom: 200px;
+      padding-bottom: 200px;
+      background-image: url(../img/content/sofa_d.png);
+      background-size: content;
+      background-position-y: center;
+      background-position-x: -157px;
+    }
+  }
+  .service-item--printing:after{
+    bottom: -84px;
+    left: 660px;
+  }
+  .service-item__bottom-decor{
+    bottom: -180px;
+  }
+}

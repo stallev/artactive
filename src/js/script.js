@@ -40,10 +40,9 @@ svg4everybody();
   };
   function showSlides(n){
     var i;
-    var slides = document.getElementsByClassName('goods-slider__item');
-    var indikators= document.getElementsByClassName('goods-slider__indicators-item');
-    document.querySelector('.goods-slider__controls-prev').onclick = minusSlide;
-    document.querySelector('.goods-slider__controls-next').onclick = plusSlide;
+    var slides = document.getElementsByClassName('banner-slide');
+    document.querySelector('.service-slider__button--prev').onclick = minusSlide;
+    document.querySelector('.service-slider__button--next').onclick = plusSlide;
     if (n > slides.length){
       index = 1;
     }
@@ -52,9 +51,7 @@ svg4everybody();
     }
     for (i=0; i< slides.length; i++){
       slides[i].style.display = 'none';
-      indikators[i].style.backgroundColor = 'inherit';
     }
     slides[index - 1].style.display = 'block';
-    indikators[index - 1].style.backgroundColor = '#ffffff';
   };
 })();

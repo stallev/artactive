@@ -1,0 +1,41 @@
+.feedback-form{
+  &__question{
+    color: $article-title-color;
+    font-family: $content-ff;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 30px;
+  }
+  &__title{
+    color: $article-title-color;
+    font-family: $form-title-ff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &__submit{
+    display: block;
+    padding: 10px 50px;
+    text-align: center;
+    border-radius: 24px;
+    background-color: #fb0275;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__fieldlist{
+    @extend %fl-col;
+  }
+  &__input{
+    margin-top: 25px;
+    padding: 5px 10px 3px;
+    border-bottom: 1px solid #cccccc;
+    color: #868995;
+    font-family: $content-ff;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 24px;
+  }
+}

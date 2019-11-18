@@ -33,6 +33,9 @@
 }
 @media (min-width: $tablet-width) {
   .section-images{
+    &__captions-list{
+      max-width: 1170px;
+    }
     &__caption--reception{
       top: 130px;
       left: 178px;
@@ -53,7 +56,6 @@
 }
 @media (min-width: $desctop-width) {
   .section-images{
-    width: 165%;
     margin-right: 70px;
     &__caption--reception{
       top: 130px;

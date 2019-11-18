@@ -1,0 +1,91 @@
+.question-block{
+  @extend %fl-col;
+  &--first{
+    order: 3;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 20px;
+    box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+    border-radius: 10px;
+    background-color: $question-block-background;
+  }
+  &--printing{
+    margin-top: 40px;
+  }
+}
+.question-block__question{
+  color: #ffffff;
+  font-family: $content-ff;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 24px;
+}
+.question-block__answer{
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-family: $form-title-ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.question-block__proposal{
+  display: block;
+  align-self: center;
+  text-align: center;
+  width: 242px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-radius: 24px;
+  background-color: $link-bg;
+  color: #ffffff;
+  font-family: $content-ff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  // Text style for "З, аказать"
+  letter-spacing: 0.57px;
+}
+@media (min-width: $tablet-width) {
+  .question-block{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+    border-radius: 10px;
+  }
+  .question-block__question{
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .question-block__answer{
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .question-block__proposal{
+    padding: 10px 20px;
+    border-radius: 24px;
+    background-color: $link-bg;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    // Text style for "З, аказать"
+    letter-spacing: 0.57px;
+  }
+  .question-block--printing{
+    margin-top: 10px;
+  }
+}
+@media (min-width: $desctop-width) {
+  .question-block{
+    width: 475px;
+    margin-bottom: 28px;
+  }
+}

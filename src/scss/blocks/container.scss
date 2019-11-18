@@ -9,6 +9,14 @@
     @extend %fl-col;
     padding-top: 30px;
   }
+  &--service{
+    @extend %fl-col;
+  }
+  &--printing{
+    padding-bottom: 240px;
+    overflow-x: hidden;
+    background-color: none;
+  }
 }
 @media (min-width: $tablet-width) {
   .container{
@@ -16,6 +24,9 @@
     &--header{
       background-size: 174%;
       background-position: -468px 0px;
+    }
+    &--printing{
+      padding-bottom: 380px;
     }
   }
 }
@@ -25,5 +36,24 @@
     &--about-us{
       flex-direction: row;
     }
+    &--service{
+      position: relative;
+      display: block;
+    }
+    &--service-item{
+      position: relative;
+    }
+    &--printing{
+      position: static;
+      padding-top: 44px;
+      padding-left: 583px;
+    }
+  }
+  .container--service:after{
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
   }
 }
